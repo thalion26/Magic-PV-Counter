@@ -1,0 +1,38 @@
+.supersonic-navbar-mock {
+  background-color: #00B5FF !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+body{
+	background-color: rgba(189, 195, 199,1.0);
+}
+
+.container-flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+}
+
+.container-joueur{
+	padding-top: 5%;
+	padding-bottom: 5%; 
+}
+
+.banniere{
+	width: 100%;
+}
+
+.title_col{
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.col_text_size{
+	text-align: center;
+	font-size: 1.5em;
+}
