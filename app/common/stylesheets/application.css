@@ -19,20 +19,24 @@ body{
 
 .container-joueur{
 	padding-top: 5%;
-	padding-bottom: 5%; 
+	padding-bottom: 5%;
+	text-align: center;
 }
 
 .banniere{
 	width: 100%;
 }
 
-.title_col{
+.compteur{
+	width: 100%
+}
+
+.text{
 	text-align: center;
-	font-size: 3em;
-	font-weight: bold;
+	width: 25%;
 }
 
 .col_text_size{
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1em;
 }
