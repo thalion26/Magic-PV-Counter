@@ -1,46 +1,47 @@
-<div class="container-flex">
+<div class="intro">Magic Counter Points</div>
+<input class="reset" type="button" value="New Game" onClick="reset2j('text1', 'text2', 'marqueur1', 'marqueur2', 'joueur1', 'joueur2')">
+
+<a href="index.html"><button class="home">Home</button></a>
+
+<div class="container">
 	<div class="container-joueur">
-		<div class="col title_col">Joueur 1</div>
-		<div class="row">
-			<div class="compteur">
-				<input type="button" value="-10" onClick="modifier(-10, 'text1')">
-				<input type="button" value="-5" onClick="modifier(-5, 'text1')">
-				<input type="button" value="-1" onClick="modifier(-1, 'text1')">
-				<input class="text" type="text" id="text1" value="21" readonly="true">
-				<input type="button" value="+1" onClick="modifier(1, 'text1')">
-				<input type="button" value="+5" onClick="modifier(5, 'text1')">
-				<input type="button" value="+10" onClick="modifier(10, 'text1')">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col col-75 col_text_size">Marqueurs Poison :</div>
-		  	<div class="compteur">
-				<input type="button" value="-1" onClick="modifier(-1, 'marqueur1')">
-				<input class="text" type="text" id="marqueur1" value="0" readonly="true">
-				<input type="button" value="+1" onClick="modifier(1, 'marqueur1')">
-			</div>
+	<div class="joueur" id="joueur1" contenteditable="true">Player 1</div>
+	<div>Life</div>
+		<div class="compteur-pv">
+			<input type="button" value="-5" onClick="modifier(-5, 'text1')">
+			<input type="button" value="-1" onClick="modifier(-1, 'text1')">
+			<input class="text" type="text" id="text1" value="20" readonly="true">
+			<input type="button" value="+1" onClick="modifier(1, 'text1')">
+			<input type="button" value="+5" onClick="modifier(5, 'text1')">
 		</div>
 	</div>
 	<div class="container-joueur">
-		<div class="col title_col">Joueur 2</div>
-		<div class="row">
-			<div class="compteur">
-				<input type="button" value="-10" onClick="modifier(-10, 'text2')">
-				<input type="button" value="-5" onClick="modifier(-5, 'text2')">
-				<input type="button" value="-1" onClick="modifier(-1, 'text2')">
-				<input class="text" type="text" id="text2" value="21" readonly="true">
-				<input type="button" value="+1" onClick="modifier(1, 'text2')">
-				<input type="button" value="+5" onClick="modifier(5, 'text2')">
-				<input type="button" value="+10" onClick="modifier(10, 'text2')">
-			</div>
+	<div>Poison:</div>
+	  	<div class="compteur-poison">
+			<input type="button" value="-1" onClick="modifier(-1, 'marqueur1')">
+			<input class="text" type="text" id="marqueur1" value="0" readonly="true">
+			<input type="button" value="+1" onClick="modifier(1, 'marqueur1')">
 		</div>
-		<div class="row">
-			<div class="col col-75 col_text_size">Marqueurs Poison :</div>
-		  	<div class="compteur">
-				<input type="button" value="-1" onClick="modifier(-1, 'marqueur2')">
-				<input class="text" type="text" id="marqueur2" value="0" readonly="true">
-				<input type="button" value="+1" onClick="modifier(1, 'marqueur2')">
-			</div>
+	</div>
+</div>
+<div class="container">
+	<div class="container-joueur">
+	<div class="joueur" id="joueur2" contenteditable="true">Player 2</div>
+	<div>Life</div>
+		<div class="compteur-pv">
+			<input type="button" value="-5" onClick="modifier(-5, 'text2')">
+			<input type="button" value="-1" onClick="modifier(-1, 'text2')">
+			<input class="text" type="text" id="text2" value="20" readonly="true">
+			<input type="button" value="+1" onClick="modifier(1, 'text2')">
+			<input type="button" value="+5" onClick="modifier(5, 'text2')">
+		</div>
+	</div>
+	<div class="container-joueur">
+	<div>Poison:</div>
+		<div class="compteur-poison">
+			<input type="button" value="-1" onClick="modifier(-1, 'marqueur2')">
+			<input class="text" type="text" id="marqueur2" value="0" readonly="true">
+			<input type="button" value="+1" onClick="modifier(1, 'marqueur2')">
 		</div>
 	</div>
 </div>
